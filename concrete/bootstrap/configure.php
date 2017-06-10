@@ -26,7 +26,7 @@ defined('DISPATCHER_FILENAME_CORE') or define('DISPATCHER_FILENAME_CORE', 'dispa
 defined('DIRNAME_APPLICATION') or define('DIRNAME_APPLICATION', 'application');
 defined('DIRNAME_UPDATES') or define('DIRNAME_UPDATES', 'updates');
 defined('DIRNAME_CORE') or define('DIRNAME_CORE', 'concrete');
-defined('DIR_BASE') or define('DIR_BASE', dirname($_SERVER['SCRIPT_FILENAME']));
+defined('DIR_BASE') or define('DIR_BASE', dirname(realpath($_SERVER['SCRIPT_FILENAME'])));
 defined('DIR_APPLICATION') or define('DIR_APPLICATION', DIR_BASE . '/' . DIRNAME_APPLICATION);
 defined('DIR_CONFIG_SITE') or define('DIR_CONFIG_SITE', DIR_APPLICATION . '/config');
 
